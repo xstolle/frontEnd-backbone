@@ -1,0 +1,33 @@
+body {
+    background-color: #eee;
+}
+section {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.addressList {
+    display: flex;
+    margin-top: 10px;
+}
+.item {
+    width: 200px;
+}
+.title {
+    display: flex;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.addressInputBlock {
+    display: flex;
+}
+#name {
+    width: 180px;
+    margin-right: 15px;
+}
+#city {
+    width: 180px;
+    margin-right: 15px;
+}
+#add {
+    height: 25px;
+}
