@@ -1,9 +1,8 @@
 'use strict'
-
 const AddressesView = Backbone.View.extend({
-  el: '#addresses',
+  el: '.addresses',
   events: {
-    'click .add': 'addAddress'
+    'click .addButton': 'addAddress'
   },
   initialize: function ( initialAddresses ) {
     this.collection = new Addresses( initialAddresses );
@@ -25,14 +24,13 @@ const AddressesView = Backbone.View.extend({
   },
   addAddress: function ( e ) {
     let formData = {
-        name: this.$( '#name' ).val( ),
-        city: this.$( '#city' ).val( )
+      name: this.$( '.name' ).val( ),
+      city: this.$( '.city' ).val( )
     };
     if ( formData.name !== '' && formData.city !== '' ) {
       e.preventDefault( );
-      formData.name= Helper.capitalizeFirstLetter( formData.name );
+      formData.name = Helper.capitalizeFirstLetter( formData.name );
       formData.city = Helper.capitalizeFirstLetter( formData.city );
-
       this.collection.add(new Address( formData ));
     }
   }

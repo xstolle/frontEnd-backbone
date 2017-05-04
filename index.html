@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
-        <meta charset="UTF-8"/>
+        <meta charset="UTF-8" />
         <title>Address</title>
         <link rel="stylesheet" href="app.css">
     </head>
+
     <body>
-        <script id="addressListTemplate" type="text/template">
-                <div class="item"><%=name%></div>
-                <div class="item"><%=city%></div>
+        <script class="addressListTemplate" type="text/template">
+            <div class="item">
+                <%=name%>
+            </div>
+            <div class="item">
+                <%=city%>
+            </div>
         </script>
         <section>
-            <div id="addresses">
-                <form id="addressForm" action="#">
+            <div class="addresses">
+                <form action="#">
                     <div class="addressInputBlock">
-                        <input class="item" id="name" type="text" placeholder="name" required>
-                        <input class="item" id="city" type="text" placeholder="city" required>
-                        <button class="add">save</button>
+                        <input class="item name" type="text" placeholder="name" required>
+                        <input class="item city" type="text" placeholder="city" required>
+                        <button class="addButton">save</button>
                     </div>
                 </form>
                 <div class="title">
@@ -38,4 +44,5 @@
         <script src="helper.js"></script>
         <script src="app.js"></script>
     </body>
+
 </html>

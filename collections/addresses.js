@@ -1,5 +1,2 @@
 'use strict'
-
-const Addresses = Backbone.Collection.extend({
-    model: Address
-});
+const Addresses = Backbone.Collection.extend({ model: Address });
